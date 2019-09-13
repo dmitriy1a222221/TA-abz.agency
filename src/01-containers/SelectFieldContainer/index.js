@@ -6,12 +6,14 @@ import SelectField from '00-components/SelectField';
 import { getPositions } from '03-actions/users';
 import { selectFieldJsCtx } from 'utils/selectField';
 
-const SelectFieldContainer = ({ positionUser, getPosition, setState, state }) => {
+const SelectFieldContainer = ({ positionUser, getPosition, setState, state, className }) => {
     const [selectId, changeSelectId] = useState(null);
     const { selectFieldLogic } = useContext(selectFieldJsCtx);
     useEffect(() => {
         getPosition();
         selectFieldLogic('select-dropdown', 'dropdown-content', selectId, changeSelectId);
+
+        console.log(className)
     }, []);
 
     const onSelectClick = () => {
@@ -20,6 +22,7 @@ const SelectFieldContainer = ({ positionUser, getPosition, setState, state }) =>
 
     return(
         <SelectField
+            className={className}
             onSelectClick={onSelectClick}
             positions={positionUser ? positionUser.positions : staticPosition}
         />

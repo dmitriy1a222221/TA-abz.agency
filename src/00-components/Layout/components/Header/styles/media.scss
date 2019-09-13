@@ -7,6 +7,9 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .w-header {
+    max-height: 63.64px;
+  }
   .b-hamburger {
     display: none;
   }
