@@ -1,0 +1,37 @@
+@media screen and (min-width: 768px){
+  .wrap-file-field {
+    width: calc((345 * 100%) / 720);
+    min-width: 345px;
+
+    .file-btn {
+      width: 219px;
+
+      .upload {
+        display: none;
+      }
+      span {
+        display: inline;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .wrap-file-field {
+    min-width: 450px;
+
+    .file-btn {
+      width: 190px;
+    }
+  }
+}
+
+@media screen and (min-width: 2560px){
+  .wrap-file-field {
+    min-width: 555px;
+
+    .file-btn {
+      width: 175px;
+    }
+  }
+}

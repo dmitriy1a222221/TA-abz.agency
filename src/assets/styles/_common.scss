@@ -1,0 +1,62 @@
+@import "color";
+
+//mixin for font
+@mixin font($size, $fontFamily, $fontWeight: normal, $textAlign: center, $color: $color-4, $lineHeight: normal, $textTransform: none) {
+    font-size: $size;
+    font-family:  $fontFamily, sans-serif;
+    line-height: $lineHeight;
+    font-weight: $fontWeight;
+    text-align: $textAlign;
+    color: $color;
+    text-transform: $textTransform;
+}
+
+.title-h4-d-t-m {
+    @include font($size: 22px, $fontFamily: "OverpassSemiBold", $fontWeight: 600, $lineHeight: 26px)
+}
+
+.paragraph-1 {
+    @include font($size: 18px, $fontFamily: "SourceSansProRegular", $fontWeight: 400, $lineHeight: 26px)
+}
+.paragraph-2 {
+    @include font($size: 16px, $fontFamily: "SourceSansProRegular", $fontWeight: 400, $lineHeight: 22px, $color: $color-5)
+}
+.paragraph-3 {
+    @include font($size: 14px, $fontFamily: "SourceSansProRegular", $fontWeight: 400, $lineHeight: 20px)
+}
+
+.link-1 {
+  text-decoration: none;
+  cursor: pointer;
+  color: $color-6;
+
+  &:hover {
+    color: $color-7;
+  }
+}
+
+.link-2 {
+  &:hover {
+    color: $color-6 !important;
+  }
+}
+
+.link-3 {
+  &:hover {
+    color: $color-7 !important;
+  }
+}
+
+.b-wap {
+    max-width: 2560px;
+    margin: 0 auto;
+}
+
+.b-main {
+    width: 100%;
+    max-width: 1170px;
+    min-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}

@@ -1,0 +1,95 @@
+@import '../../../../../assets/styles/common';
+
+.w-footer {
+  background-color: $secondaryColor;
+}
+
+.b-footer {
+  padding-top: 32px;
+  padding-bottom: 29px;
+
+  &__bottom-content {
+    padding-top: 27px;
+  }
+
+  &__top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo-footer {
+    display: block;
+    width: 130px;
+    margin-bottom: 16px;
+
+    .cls-2 {
+      fill: $color-2;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__nav-item {
+    @include font($size: 16px, $fontFamily: "SourceSansProRegular", $fontWeight: 400, $color: $color-2, $lineHeight: 25px);
+    cursor: pointer;
+  }
+  &__b-contacts {
+    margin-bottom: 30px;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__contact-icon {
+    display: none;
+  }
+  &__nav-link-list {
+    display: none;
+  }
+  &__contact-descr {
+    @include font($size: 18px, $fontFamily: "SourceSansProRegular", $fontWeight: 400, $color: $color-2, $lineHeight: 20px, $textAlign: left);
+  }
+  &__b-copiright {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  &__copiright {
+    @include font($size: 12px, $fontFamily: "SourceSansProRegular", $fontWeight: 400, $lineHeight: 20px, $color: $color-2)
+  }
+  &__b-social {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &__social-item-img:hover {
+    &>g>g {
+      fill: #EF6C00;
+    }
+  }
+  &__social-item {
+    margin-right: 22px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.divider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: $color-3;
+}

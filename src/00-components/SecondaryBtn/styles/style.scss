@@ -1,0 +1,36 @@
+@import '../../../assets/styles/common';
+
+.secondaryBtn {
+  width: 290px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid $primaryColor;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  background-color: $backgroundColor;
+  @include font($fontFamily: "SourceSansProBold", $size: 20px, $fontWeight: 700, $color: $primaryColor, $lineHeight: 35px);
+
+  &:hover {
+    color: $color-7 !important;
+    background-color: $color-8;
+  }
+  &:active {
+    opacity: .7;
+    background-color: $color-8;
+  }
+
+  &.disable {
+    border: none;
+    background-color: $color-9;
+    color: $color-10;
+    cursor: auto;
+    &:hover {
+      opacity: 1;
+      color: $color-10 !important;;
+    }
+    &:active {
+      opacity: 1;
+    }
+  }
+}

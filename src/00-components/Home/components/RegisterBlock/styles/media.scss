@@ -1,0 +1,55 @@
+@media screen and (min-width: 768px) {
+  .b-register {
+    padding-top: 48px;
+    padding-bottom: 120px;
+
+    &__title {
+      margin-bottom: 21px;
+    }
+    &__subtitle {
+      max-width: 375px;
+      margin: 0 auto 55px;
+    }
+
+    &__form-row {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    &__input {
+      margin-bottom: 0;
+    }
+    &__btn {
+      margin: -14px auto 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .b-register {
+    padding-top: 40px;
+    padding-bottom: 140px;
+
+    &__title {
+      margin-bottom: 13px;
+    }
+    &__subtitle {
+      max-width: 100%;
+      margin: 0 auto 62px;
+    }
+    &__form-row {
+      margin-bottom: 22px;
+    }
+    &__btn {
+      margin: -17px auto 0;
+    }
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .b-register {
+    padding-top: 62px;
+    padding-bottom: 150px;
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../../../../assets/styles/color';
+
+.w-header {
+  background-color: $backgroundColor;
+  overflow: hidden;
+}
+.b-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  &__tools {
+    display: none;
+  }
+}
+
+.sticky {
+  position: fixed;
+  height: auto !important;
+  z-index: 10;
+  width: 100%;
+  animation-duration: .5s;
+  animation-name: showHeader;
+}
+
+@keyframes showHeader {
+  from {
+    top: -70px
+  }
+  to {
+    top: 0
+  }
+}

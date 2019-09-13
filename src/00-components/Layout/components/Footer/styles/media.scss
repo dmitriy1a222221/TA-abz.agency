@@ -1,0 +1,126 @@
+@import '../../../../../assets/styles/color';
+
+@media screen and (min-width: 768px) {
+  .b-footer {
+    &__top-content {
+      padding-top: 31px;
+      padding-bottom: 31px;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__bottom-content {
+      padding-top: 22px;
+    }
+    &__nav-list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: -3px;
+    }
+    &__nav-item {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__logo-footer {
+      margin-bottom: 0;
+    }
+    &__b-contacts {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 27px;
+    }
+    &__nav-part {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-right: 52px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__contact {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    &__b-copiright {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__b-social {
+      margin-bottom: 0;
+      margin-top: 5px;
+    }
+    &__nav-link-list {
+      display: flex;
+    }
+    &__nav-link-item {
+      color: $color-2 !important;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__copiright {
+      margin-top: -5px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .b-footer {
+    &__top-content {
+      padding-bottom: 30px;
+    }
+    &__bottom-content {
+      padding-top: 23px;
+    }
+    &__logo-footer {
+      width: 135px;
+    }
+    &__contacts {
+      margin-top: 2px;
+    }
+    &__contact {
+      margin-bottom: 21px;
+    }
+    &__nav-part {
+      margin-right: 88px;
+    }
+    &__copiright {
+      margin-top: 8px;
+    }
+    &__contact-descr {
+      font-size: 20px !important;
+    }
+    &__contact {
+      margin-bottom: 23px;
+    }
+    &__contact-icon {
+      display: block;
+      margin-right: 9px;
+    }
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .b-footer {
+    &__nav-part {
+      margin-right: 124px;
+    }
+    &__copiright {
+      margin-top: 0;
+    }
+  }
+}

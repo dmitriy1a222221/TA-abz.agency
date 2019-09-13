@@ -1,0 +1,28 @@
+@import "../../../../../assets/styles/common";
+
+.w-TABlock {
+  background: url('../../../../../assets/img/banner-bg/banner-bg-320x393.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.b-TABlock {
+  padding-top: 64px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title-h1 {
+    color: $color-2 !important;
+    margin-bottom: 6px;
+    margin-left: 5px;
+  }
+  &__paragraph-2 {
+    color: $color-2 !important;
+    margin-bottom: 38px;
+    max-width: 280px;
+  }
+  &__not-mobile {
+    display: none;
+  }
+}

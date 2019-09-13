@@ -1,0 +1,56 @@
+@import "../../../../../assets/styles/common";
+
+.b-user-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+  }
+  &__content {
+    width: 100%;
+  }
+  &__content-title {
+    margin: 0 auto 2px;
+    max-width: 83%;
+
+  }
+  &__content-descr {
+    color: $color-5 !important;
+  }
+
+  &__content-title, &__content-descr {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.b-tooltip {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  font-size: 16px;
+  border-radius: 5px;
+  position: absolute;
+  width: auto;
+  left: 5px; top: 0;
+  background: #707070;
+  color: #fff;
+  padding: 5px;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: .4s;
+}
+[data-tooltip]:hover::after {
+  visibility: visible;
+  opacity: 1;
+  top: 25px;
+}

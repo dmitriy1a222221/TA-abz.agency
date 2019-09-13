@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px) {
+  .text-field-block {
+    min-width: 220px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .text-field-block {
+    min-width: 290px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .text-field-block {
+    min-width: 360px;
+  }
+}

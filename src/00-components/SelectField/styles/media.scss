@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px) {
+  .select-wrapper {
+    width: calc((345 * 100%) / 720);
+    min-width: 325px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .select-wrapper {
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .select-wrapper {
+    min-width: 555px;
+  }
+}

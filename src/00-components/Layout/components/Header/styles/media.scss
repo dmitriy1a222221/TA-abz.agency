@@ -1,0 +1,77 @@
+@import '../../../../../assets/styles/common';
+
+@media screen and (min-width: 780px) {
+  .b-hamburger {
+    margin: 2px 12px 0 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .b-hamburger {
+    display: none;
+  }
+  .b-header {
+    padding-bottom: 3px;
+
+    &__logo {
+      margin-bottom: 16px;
+    }
+    &__tools {
+      display: flex;
+      align-items: center;
+    }
+    &__nav-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 75px;
+      transform:  translateY(-10px);
+    }
+    &__nav-item {
+      @include font($size: 16px, $fontFamily: "SourceSansProRegular", $fontWeight: 400, $lineHeight: 21px, $color: #000000);
+      white-space: nowrap;
+      margin-right: 29px;
+      cursor: pointer;
+
+      &_active {
+        color: #36429A;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__user-info {
+      display: flex;
+      align-items: center;
+      transform:  translateY(-10px);
+    }
+    &__user-name {
+      @include font($size: 14px, $fontFamily: "SourceSansProRegular", $fontWeight: 400, $textAlign: right, $color: #000000);
+    }
+    &__user-email {
+      @include font($size: 12px, $fontFamily: "SourceSansProRegular", $fontWeight: 400, $textAlign: right, $color: $color-1);
+    }
+    &__user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 14px;
+      margin-left: 11px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .b-header {
+    &__tools {
+      margin-right: 65px;
+    }
+    &__nav-list {
+      margin-right: 112px;
+    }
+    &__user-info {
+      transform: translate(64px, -7px);
+    }
+  }
+}

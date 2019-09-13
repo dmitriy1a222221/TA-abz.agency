@@ -1,0 +1,42 @@
+@import "../../../../../assets/styles/common";
+
+.w-req {
+  background: url("../../../../../assets/img/third-block-bg/third-block-bg-320x1031.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.b-req {
+  padding-top: 66px;
+  padding-bottom: 65px;
+
+  &__title {
+    color: $color-2 !important;
+    margin-bottom: 22px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__content-icon {
+    width: 260px;
+    height: 225px;
+    margin-bottom: 19px;
+
+    &_1 {
+      display: block;
+    }
+    &_2 {
+      display: none;
+    }
+  }
+  &__content-descr {
+    color: $color-2 !important;
+    margin-bottom: 22px;
+    max-width: 435px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

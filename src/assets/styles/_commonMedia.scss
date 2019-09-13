@@ -1,0 +1,112 @@
+@media screen and (max-width: 767px) {
+  .title-h1-m {
+    @include font($size: 30px, $fontFamily: "OverpassSemiBold", $fontWeight: 600, $lineHeight: 36px)
+  }
+  .title-h2-m {
+    @include font($size: 26px, $fontFamily: "OverpassSemiBold", $fontWeight: 600, $lineHeight: 31px)
+  }
+  .title-h3-m {
+    @include font($size: 22px, $fontFamily: "OverpassSemiBold", $fontWeight: 600, $lineHeight: 26px)
+  }
+  .title-h5-m {
+    @include font($size: 16px, $fontFamily: "SourceSansProRegular", $fontWeight: 400, $lineHeight: 20px)
+  }
+  .i-only-mobile {
+    display: inline;
+  }
+  .i-not-mobile {
+    display: none;
+  }
+  .i-only-table {
+    display: none;
+  }
+  .i-only-desk {
+    display: none;
+  }
+  .i-only-2k {
+    display: none;
+  }
+  .i-not-desk {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title-h2-d-t {
+    @include font($size: 42px, $fontFamily: "OverpassSemiBold", $fontWeight: 600, $lineHeight: 51px)
+  }
+  .title-h3-d-t {
+    @include font($size: 26px, $fontFamily: "OverpassSemiBold", $fontWeight: 600, $lineHeight: 31px)
+  }
+  .title-h5-d-t {
+    @include font($size: 18px, $fontFamily: "SourceSansProRegular", $fontWeight: 400, $lineHeight: 21px)
+  }
+
+  .i-only-mobile {
+    display: none;
+  }
+  .i-not-mobile {
+    display: inline;
+  }
+  .i-only-table {
+    display: inline;
+  }
+  .i-only-desk {
+    display: none;
+  }
+  .i-not-table {
+    display: none;
+  }
+  .i-only-2k {
+    display: none;
+  }
+
+  .b-main {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .title-h1-t {
+    @include font($size: 42px, $fontFamily: "OverpassSemiBold", $fontWeight: 600, $lineHeight: 51px)
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title-h1-d {
+    @include font($size: 50px, $fontFamily: "OverpassSemiBold", $fontWeight: 600, $lineHeight: 60px)
+  }
+  .b-main {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+  .i-only-table {
+    display: none;
+  }
+  .i-only-desk {
+    display: inline;
+  }
+  .i-not-desk {
+    display: none;
+  }
+  .i-not-table {
+    display: inline;
+  }
+  .i-only-2k {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .i-only-desk {
+    display: none;
+  }
+  .i-only-2k {
+    display: inline;
+  }
+  .b-main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
