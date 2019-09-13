@@ -1,4 +1,4 @@
-@import '../../../../../assets/styles/color';
+@import '../../../../../assets/styles/common';
 
 .w-header {
   background-color: $backgroundColor;
@@ -14,6 +14,72 @@
   &__tools {
     display: none;
   }
+
+  & {
+
+  }
+
+  &__mob-tools {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 255px;
+    height: 100vh;
+    background-color: $color-2;
+    z-index: 11;
+    animation-duration: .5s;
+    animation-name: outsideFade;
+
+    &_active {
+      display: block;
+    }
+  }
+}
+
+.b-dark {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 10;
+  animation-duration: .5s;
+  animation-name: Fade;
+
+  &_active {
+    display: block;
+  }
+}
+
+.b-mob-tools {
+  &__user-info {
+    padding: 30px 15px 25px;
+    border-bottom: 1px solid $color-1;
+  }
+  &__nav-list {
+    padding: 30px 15px;
+  }
+  &__nav-item {
+    @include font($size: 16px, $fontFamily: "SourceSansProRegular", $textAlign: left, $fontWeight: 400, $lineHeight: 20px, $color: $color-4);
+    display: block;
+    margin-bottom: 30px;
+  }
+  &__user-avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  &__user-name {
+    @include font($size: 20px, $fontFamily: "SourceSansProRegular", $textAlign: left, $fontWeight: 400, $lineHeight: 20px, $color: $color-4);
+    margin-bottom: 8px;
+  }
+  &__user-email {
+    @include font($size: 13px, $fontFamily: "SourceSansProRegular", $textAlign: left, $fontWeight: 400, $lineHeight: 20px, $color: $color-1);
+  }
 }
 
 .sticky {
@@ -25,11 +91,35 @@
   animation-name: showHeader;
 }
 
+div .active-link {
+  color: #36429A;
+}
+
 @keyframes showHeader {
   from {
     top: -70px
   }
   to {
     top: 0
+  }
+}
+
+@keyframes outsideFade {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes Fade {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  to {
+    background-color: rgba(0, 0, 0, .4);
   }
 }

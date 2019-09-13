@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 
 import Header from '00-components/Layout/components/Header';
@@ -6,13 +6,19 @@ import Header from '00-components/Layout/components/Header';
 import { getHeaderUser } from '03-actions/users';
 
 const HeaderContainer = ({ headerUser, getHeaderUser }) => {
-
+    const [ openMenu, setOpenMenu ] = useState(false);
     useEffect(() => {
         getHeaderUser(1);
     }, []);
 
+    const toggleMenu = () => {
+        setOpenMenu(!openMenu)
+    };
+
     return(
         <Header
+            mobActive={openMenu}
+            onClickBtn={toggleMenu}
             headerUser={headerUser ? headerUser : {} }
         />
     )
