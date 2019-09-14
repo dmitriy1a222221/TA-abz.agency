@@ -4,6 +4,7 @@
     padding-bottom: 60px;
 
     &__content {
+      width: auto;
       display: grid;
       grid-template-columns: 220px 220px 220px;
       grid-gap: 7px 30px;

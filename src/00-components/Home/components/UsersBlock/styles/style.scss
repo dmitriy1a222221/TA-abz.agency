@@ -1,5 +1,9 @@
 @import "../../../../../assets/styles/common";
 
+.w-users {
+  overflow: hidden;
+}
+
 .b-users {
   padding-top: 67px;
   padding-bottom: 40px;
@@ -23,5 +27,6 @@
   }
   &__content {
     margin-bottom: 30px;
+    width: 100%;
   }
 }
