@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 
+import UsersBlock from '00-components/Home/components/UsersBlock';
+
 import { getUsers } from '03-actions/users';
 import { updateUsers } from '03-actions/updateUsers';
-
-import UsersBlock from '00-components/Home/components/UsersBlock';
 
 const UsersBlockContainer = ({ getUsers, users, data, updateUsersState, changeUpdateUsers }) => {
     const [state, setState] = useState({
         page: 1,
         countItems: 6,
+        countItemsPlus: 6,
         userEnd: false
     });
 
@@ -25,10 +26,10 @@ const UsersBlockContainer = ({ getUsers, users, data, updateUsersState, changeUp
     }, [state.countItems]);
 
     useEffect(() => {
-        const { page } = state;
+        const { page, countItemsPlus } = state;
 
         if(updateUsersState) {
-            setState({...state, countItems: 6});
+            setState({...state, countItems: countItemsPlus});
             getUsers({
                 page: page,
                 count: 6

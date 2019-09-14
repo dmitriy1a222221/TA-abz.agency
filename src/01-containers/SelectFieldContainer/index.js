@@ -12,8 +12,6 @@ const SelectFieldContainer = ({ positionUser, getPosition, setState, state, clas
     useEffect(() => {
         getPosition();
         selectFieldLogic('select-dropdown', 'dropdown-content', selectId, changeSelectId);
-
-        console.log(className)
     }, []);
 
     const onSelectClick = () => {
